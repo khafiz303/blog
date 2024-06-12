@@ -1,0 +1,33 @@
+.login form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.login h2{
+    font-size: 36px;
+    text-align: center;
+    width: 100;
+    margin-bottom: 15px;
+}
+.login input{
+    border: 1px solid #E7E7E7;
+    outline: none;
+    width: 20%;
+    padding: 10px ;
+
+
+}
+
+.login button{
+    width: calc(20% + 20px);
+
+}
+
+form img{
+    width: 50px;
+}

@@ -1,0 +1,178 @@
+.header-profile img{
+    width: 60px;
+}
+
+.main-blog{
+    display: flex;
+    justify-content: space-between;
+}
+.profile{
+    width: 20%;
+    background-color: #fff;
+    box-shadow: #00000040;
+    margin: 0 5% 0 0;
+    margin-left: 25px;
+    padding:  0 0 35px 20px;
+    height: fit-content;
+    box-shadow: 5px 5px 0px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 0px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 0px -5px rgba(0,0,0,0.75);
+   
+    
+    flex-direction: column;
+
+
+}
+
+.profile:nth-child(1), .profile:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+}
+.profile img{
+    width: 60%;
+
+}
+
+.profile h4{
+    font-size: 16px;
+    line-height: 46px;
+}
+
+ section .profile p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left ;
+    display: flex;
+    justify-content: left !important;
+}
+
+
+.profile-btn{
+    margin-top: 15px;
+}
+
+
+
+
+.comment-top{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+  
+}
+
+.comment-top img{
+    width: 80px;
+    margin-right: 20px;
+}
+
+.comment-top h2{
+    font-size: 24px ;
+}
+
+.main-commentaries p{
+    margin-top: 15px;
+    
+}
+
+.main-commentaries h2{
+    font-size: 24px;
+    text-align: left;
+    margin-top: 15px;
+
+}
+
+.comment{
+    padding-bottom: 10px;
+    border-bottom: 2    px solid lightgrey;
+}
+
+.add-comments {
+    margin-top: 25px;
+}
+
+.add-comments input{
+    border: 1px solid #E7E7E7;
+    outline: none;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 20px ;
+    margin-bottom: 15px;
+
+
+}
+
+.noacc{
+    margin: 0;
+    background-color: #FFF3CD;
+    padding:  20px;
+    font-size: 16px;
+}
+
+.noacc p{
+    margin: 0;
+    text-align: left;
+    color: #856404;
+
+}
+
+.noacc p span{
+    color: #00A2DC;
+}
+
+
+.editor{
+    display: flex;
+    position: relative;
+    gap: 5px;
+    align-items: center;
+
+
+}
+
+.editor p{
+    margin-top: 0;
+}
+
+.settings{
+    display: flex;
+  
+    justify-content: space-between;
+}
+
+.panel-menu{
+    position: absolute;
+
+    top: 100%;
+    right:100%;
+    background-color: #fff;
+    width: 350%;
+    height: 250%;
+    cursor: pointer;
+    display: block;
+
+}
+
+.panel-menu button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 6px;
+    font-weight: 700;
+}
+
+.panel-menu button:last-child{
+    color: red;
+}
+
+
+.panel-menu button:first-child{
+    color: green;
+}
+.open{
+    display: none;
+}
+

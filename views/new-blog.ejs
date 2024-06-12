@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/all.css">
+</head>
+<body>
+    <%-include('partials/header.ejs')%>
+
+    <section>
+        <div class="main">
+            <div class="new-blog">
+                <h2>Новый блог</h2>
+                <form action="/api/new/blog" method="POST" enctype="multipart/form-data">
+                    <input type="text" placeholder="Введите заголовок блога" name="title">
+                    <input type="text" placeholder="Введите подзаголовок" name="subtitle">
+                    <input type="text" placeholder="Введите дополнительные заголовок" name="anotherTitle">
+                    <select name="category">
+                        <option value="" disabled selected hidden>Выберите категорию</option>
+                        <%
+                            It.forEach(item =>{
+                        %>
+                        <option value="<%=item.id%>"><%=item.name%></option>     
+                        <%      
+                            })
+                        %>
+                        
+                      
+                    </select>
+                    
+                    <label for="fileInput">Выберите картинку</label>
+                    <input type="file" id="fileInput" name="image" style="display: none;">
+                    <textarea placeholder="Введите описания блога" name="description"></textarea>
+                    <textarea placeholder="Введите дополнительное описания блога" name="anotherDescription"></textarea>
+                    <button type="submit">Создать</button>
+
+                </form>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

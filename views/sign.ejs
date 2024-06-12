@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/all.css">
+</head>
+<body>
+    <%-include('partials/header.ejs')%>
+ 
+    <div class="login">
+        <h2>Регистрация</h2>
+        <form action="/api/signup" method="POST" id="form">
+        
+            <input type="email" placeholder="Введите email" name ='email'>  
+            <%
+                if(foundUser){
+            %>
+                    <p><%=foundUser%></p>
+            <%
+                }
+            %>
+            <div class="error" id="emailError">
+                <p>Введите почту корректно</p>
+            </div>  
+            <input type="text" placeholder="Введите полное имя" name="full_name">
+            <div class="error" id="nameError">
+                <p>Введите имя корректно</p>
+            </div>  
+            <input type="password" placeholder="Введите пароль" name="password">
+            <div class="error" id="passwordError">
+                <p>Введите пароль больше 8 символов</p>
+            </div>  
+            <input type="password" placeholder="Подтвердите пароль" name="re_password">
+            <div class="error" id="re_passwordError">
+                <p>Введите пароли не свопадают</p>
+            </div>  
+            <button class="btn" type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    <script src="/js/validate.js"></script>
+</body>
+</html>

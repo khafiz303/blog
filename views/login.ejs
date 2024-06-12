@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/all.css">
+</head>
+<body>
+    <%-include('partials/header.ejs')%>
+ 
+    <div class="login">
+        <h2>Вход</h2>
+        <form action="/api/login" method="POST">
+            <input type="email" placeholder="Введите email" name="email">
+            <input type="password" placeholder="Введите пароль" name="password">
+            <button type="submit" class="btn">Войти</button>
+            <p>Войти с помошью: GitHub</p>
+            <a href="/auth/github"><img src="/images/icons/github.png" alt=""></a>
+        </form>
+    </div>
+
+
+</body>
+</html>

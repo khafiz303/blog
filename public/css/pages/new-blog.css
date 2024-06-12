@@ -1,0 +1,33 @@
+.new-blog form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
+}
+
+.new-blog h2{
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.new-blog input, .new-blog select, .new-blog button, .new-blog textarea{
+    border: 1px solid #E7E7E7;
+    outline: none;
+    padding: 15px;
+}
+
+.new-blog label{
+    background-color: #FFF72F;
+    width: fit-content;
+    padding: 15px  10px;
+    border-radius: 4px;
+
+}
+
+.new-blog button{
+    background-color: #00A2DC;
+    width: fit-content;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+}

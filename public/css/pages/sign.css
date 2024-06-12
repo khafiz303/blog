@@ -1,0 +1,11 @@
+.error{
+    display: none;
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+form > p:nth-child(1){
+    color: red;
+    padding-bottom: 5px;
+    border-bottom: 1px solid red;
+}
